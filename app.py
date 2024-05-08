@@ -14,7 +14,7 @@ def index():
         if age > 18:
             message = "Welcome to our site!" """
 
-        # Validate City input
+        # Validate email input
         if not email.isalpha():
             message = "Please enter a valid email"
 
