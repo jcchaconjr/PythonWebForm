@@ -1,6 +1,8 @@
+import os
 from flask import Flask, render_template, request
 
-app = Flask(__name__)
+template_dir = os.path.abspath('Subscription')
+app = Flask(__name__, template_folder=template_dir)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
