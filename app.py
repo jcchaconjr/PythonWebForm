@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request
 
-template_dir = os.path.abspath('Subscription')
+template_dir = os.path.abspath('Pages')
 app = Flask(__name__, template_folder=template_dir)
 
 @app.route('/', methods=['GET', 'POST'])
